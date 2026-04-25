@@ -142,6 +142,7 @@ body{
 
 .subtotalInfoText:not(:first-child){
     margin-top: 15px;
+
 }
 
 .subtotalInfoText{
@@ -156,6 +157,57 @@ svg{
     background-color: black;
     border-radius: 50%;
     cursor: pointer;
+    transform: scale(0.7);
+}
+
+#spanDelivery{
+    position: relative;
+}
+
+#spanTax{
+    position: relative;
+}
+
+
+#totalDiv{
+    margin-right: auto;
+    padding: 20px;
+}
+
+#checkoutButtonDiv{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 15%;
+    gap: 10px;
+}
+
+
+.checkoutButton{
+    border-radius: var(--primaryBorderRaduis);
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    flex: 1;    
+}
+
+#proceedButton{
+    background-color: #0285FF;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#continueButton{
+    font-size: 1.3rem;
+    background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+}
+
+#proceedButton, #continueButton{
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#proceedButton:hover, #continueButton:hover{
+    transform: scale(1.02);
 }
 
 

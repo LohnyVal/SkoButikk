@@ -4,6 +4,53 @@ let infoHoverDevlivery = document.getElementById("svgDelivery");
  let boxContainerTax = document.getElementById("spanTax");
  let boxContainerDeliver = document.getElementById("spanDelivery");
 
+ let expressButton = document.getElementById("expressButton");
+ let freeButton = document.getElementById("freeButton");
+
+
+expressButton.addEventListener("click", () =>{
+    expressButton.classList.toggle("active");
+    freeButton.classList.remove("active");
+})
+
+freeButton.addEventListener("click", () =>{
+    freeButton.classList.toggle("active");
+    expressButton.classList.remove("active");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 infoHoverTax.addEventListener("mouseenter", () =>{
     let textBox = document.createElement("div");
     let text = document.createElement("p");

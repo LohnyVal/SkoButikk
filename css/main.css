@@ -93,7 +93,9 @@ body{
     cursor: pointer;
 }
 
-.options:hover{
+
+#expressButton.active,
+#freeButton.active {
     background-color: white;
     border-radius: var(--primaryBorderRaduis);
     border: 0.5px solid black;
@@ -189,7 +191,7 @@ svg{
     flex: 1;    
 }
 
-#proceedButton{
+#checkoutButton{
     background-color: #0285FF;
     color: white;
     font-size: 1.3rem;
@@ -201,14 +203,16 @@ svg{
     border: 1px solid rgba(0, 0, 0, 0.509);
 }
 
-#proceedButton, #continueButton{
+#checkoutButton, #continueButton{
     cursor: pointer;
     transition: 200ms;
 }
 
-#proceedButton:hover, #continueButton:hover{
+#checkoutButton:hover, #continueButton:hover{
     transform: scale(1.02);
 }
+
+
 
 
 

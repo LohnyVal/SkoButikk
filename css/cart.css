@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --primaryBorderRaduis: 8px;
+    --primaryBorder: 0.2px solid rgba(0, 0, 0, 0.483);
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.103);
+
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 60%;
+    border-radius: 16px;
+}
+
+#shoes{
+    background-color: white;
+    width: 58%;
+    height: 90%;
+    border-radius: var(--primaryBorderRaduis);
+    border: var(--primaryBorder);
+}
+
+#cartTextDiv{
+    width: 100%;
+    border-top-left-radius: var(--primaryBorderRaduis);
+    border-top-right-radius: var(--primaryBorderRaduis);
+}
+
+#cartText{
+    padding: 20px;
+    font-family: "Neuton";
+}
+
+#hr{
+
+    width: 92%; 
+    margin: 0 auto;
+}
+
+#checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    height: 90%;
+    border-radius: var(--primaryBorderRaduis);
+    border: var(--primaryBorder);
+}
+
+#deliverTextDiv{
+    width: 100%;
+    border-top-left-radius: var(--primaryBorderRaduis);
+    border-top-right-radius: var(--primaryBorderRaduis);
+}
+
+#deliverText{
+    padding: 20px;
+    opacity: 0.6;
+}
+
+#deliverOptionsDiv{
+    display: flex;
+    border-radius: var(--primaryBorderRaduis);
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.063);
+    height: 60px;
+    width: 90%;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+
+#expressButton.active,
+#freeButton.active {
+    background-color: white;
+    border-radius: var(--primaryBorderRaduis);
+    border: 0.5px solid black;
+}
+
+.optionText{
+    font-size: 1.4rem;
+}
+
+#dateOfDeliverDiv{
+    margin-right: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+#border{
+    width: 90%;
+    border-style: dashed;
+}
+
+#promocode{
+    width: 85%;
+    margin-top: 20px;
+    border-radius: var(--primaryBorderRaduis);
+    padding: 20px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+}
+
+#discountDiv{
+    margin-right: auto;
+    padding: 20px;
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+#subtotalDiv{
+    margin-right: auto;
+    padding: 20px;
+}
+
+#subtotalInfo{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+
+.subtotalInfoText{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+#deliveryDiv, #taxDiv, #discountRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+svg{
+    margin-left: 10px;
+    fill: white;
+    background-color: rgba(0, 0, 0, 0.481);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+#spanDelivery{
+    position: relative;
+}
+
+#spanTax{
+    position: relative;
+}
+
+
+#totalDiv{
+    margin-right: auto;
+    padding: 20px;
+}
+
+#checkoutButtonDiv{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 15%;
+    gap: 10px;
+}
+
+
+.checkoutButton{
+    border-radius: var(--primaryBorderRaduis);
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    flex: 1;    
+}
+
+#checkoutButton{
+    background-color: #0285FF;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#continueButton{
+    font-size: 1.3rem;
+    background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+}
+
+#checkoutButton, #continueButton{
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#checkoutButton:hover, #continueButton:hover{
+    transform: scale(1.02);
+}
+
+#backToIndex{
+    padding: 10px;
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+@font-face {
+    font-family: "Neuton";
+    src: url("../fonts/Neuton-Bold.ttf");
+}

@@ -3,220 +3,134 @@
     margin: 0;
 }
 
-
-:root{
-    --primaryBorderRaduis: 8px;
-    --primaryBorder: 0.2px solid rgba(0, 0, 0, 0.483);
-}
-
 html, body{
     height: 100%;
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.103);
-
+    background-color: white;
 }
 
-#container{
+.navbar{
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    height: 90%;
-    width: 60%;
-    border-radius: 16px;
+   
 }
 
-#shoes{
-    background-color: white;
-    width: 58%;
-    height: 90%;
-    border-radius: var(--primaryBorderRaduis);
-    border: var(--primaryBorder);
-}
-
-#cartTextDiv{
-    width: 100%;
-    border-top-left-radius: var(--primaryBorderRaduis);
-    border-top-right-radius: var(--primaryBorderRaduis);
-}
-
-#cartText{
-    padding: 20px;
-    font-family: "Neuton";
-}
-
-#hr{
-    width: 92%; 
-    margin: 0 auto;
-}
-
-#checkout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    width: 40%;
-    height: 90%;
-    border-radius: var(--primaryBorderRaduis);
-    border: var(--primaryBorder);
-}
-
-#deliverTextDiv{
-    width: 100%;
-    border-top-left-radius: var(--primaryBorderRaduis);
-    border-top-right-radius: var(--primaryBorderRaduis);
-}
-
-#deliverText{
-    padding: 20px;
-    opacity: 0.6;
-}
-
-#deliverOptionsDiv{
-    display: flex;
-    border-radius: var(--primaryBorderRaduis);
-    border: 1px solid rgba(0, 0, 0, 0.123);
-    background-color: rgba(0, 0, 0, 0.063);
-    height: 60px;
-    width: 90%;
-}
-
-.options{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navleft{
     flex: 1;
+    list-style-type: none;
+}
+
+#logo{
+    text-decoration: none;
     cursor: pointer;
 }
 
-
-#expressButton.active,
-#freeButton.active {
-    background-color: white;
-    border-radius: var(--primaryBorderRaduis);
-    border: 0.5px solid black;
-}
-
-.optionText{
-    font-size: 1.4rem;
-}
-
-#dateOfDeliverDiv{
-    margin-right: auto;
-    padding: 20px;
-    font-size: 1.2rem;
-    opacity: 0.6;
-}
-
-#border{
-    width: 90%;
-    border-style: dashed;
-}
-
-#promocode{
-    width: 85%;
-    margin-top: 20px;
-    border-radius: var(--primaryBorderRaduis);
-    padding: 20px 15px;
-    border: 1px solid rgba(0, 0, 0, 0.509);
-}
-
-#discountDiv{
-    margin-right: auto;
-    padding: 20px;
-    font-size: 1.1rem;
-    opacity: 0.5;
-}
-
-#subtotalDiv{
-    margin-right: auto;
-    padding: 20px;
-}
-
-#subtotalInfo{
-    margin-right: auto;
-    padding: 10px 20px;
-}
-
-.subtotalInfoText:not(:first-child){
-    margin-top: 15px;
-
-}
-
-.subtotalInfoText{
-    font-size: 1.4rem;
+.navcenter{
+    flex: 2;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    list-style-type: none;
 }
 
-svg{
-    margin-left: 10px;
-    fill: white;
-    background-color: black;
-    border-radius: 50%;
-    cursor: pointer;
-    transform: scale(0.7);
-}
-
-#spanDelivery{
-    position: relative;
-}
-
-#spanTax{
-    position: relative;
-}
-
-
-#totalDiv{
-    margin-right: auto;
-    padding: 20px;
-}
-
-#checkoutButtonDiv{
+.navright{
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 15%;
+    justify-content: flex-end;
     gap: 10px;
 }
 
-
-.checkoutButton{
-    border-radius: var(--primaryBorderRaduis);
-    border: 1px solid rgba(0, 0, 0, 0.509);
-    flex: 1;    
+.navleft, .navcenter, .navright{
+    margin: 20px 50px;
 }
 
-#checkoutButton{
-    background-color: #0285FF;
-    color: white;
-    font-size: 1.3rem;
+#profileicon{
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-#continueButton{
-    font-size: 1.3rem;
-    background-color: inherit;
-    border: 1px solid rgba(0, 0, 0, 0.509);
+#carticon{
+    width: 8%;
 }
 
-#checkoutButton, #continueButton{
+#profileicon, #carticon{
     cursor: pointer;
-    transition: 200ms;
 }
 
-#checkoutButton:hover, #continueButton:hover{
-    transform: scale(1.02);
+.links a{   
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: black;
+}
+
+main{
+    height: fit-content;
+}
+
+.hero{
+
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+}
+
+#title{
+    font-size: 3.5rem;
+    color: #97501B;
+}
+
+.linebreak{
+    display: block;
 }
 
 
+#buttons{
+    display: flex;
+    padding: 20px 0;
+    gap: 60px;
+}
+
+.buttons{
+    width: 30%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+#aboutbutton, #shopbutton{
+    cursor: pointer;
+}
+
+#shopbutton{
+    background-color: inherit;
+    border: 1px solid #97501B;
+    color: #97501B;
+    font-size: 1.2rem;
+}
+
+#aboutbutton{
+    background-color: #97501B;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#aboutbutton:hover{
+    background-color: inherit;
+    border: 1px solid #97501B;
+    color: #97501B;
+}
 
 
+#products{
 
-@font-face {
-    font-family: "Neuton";
-    src: url("../fonts/Neuton-Bold.ttf");
 }

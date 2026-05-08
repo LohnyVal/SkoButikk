@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butikk</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/landing.js" defer></script>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <script src="../js/landing.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navleft">
-            <li><a href="" id="logo">Logo</a></li>
+            <li><img src="./img/sunglasseslogo.png" alt="" id="logo" draggable="false"></li>
         </div>
         <ul class="navcenter">
             <li class="links"><a href="" class="linksdeceration">HOME</a></li>
@@ -20,8 +20,8 @@
             <li class="links"><a href="" class="linksdeceration">CONTACT</a></li>
         </ul>
         <div class="navright">
-            <img src="./img/shoppingcart.svg" alt="" id="carticon">
-            <img src="./img/IMG_6156.png" alt="" id="profileicon">
+            <img src="./img/shoppingcart.svg" alt="" id="carticon" draggable="false">
+            <img src="./img/IMG_6156.png" alt="" id="profileicon" draggable="false">
         </div>
     </nav>
     <main>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="sunglassdiv">
-                <img src="./img/sunglasses.png" alt="" id="sunglasses">
+                <img src="./img/sunglasses.png" alt="" id="sunglasses" draggable="false">
             </div>
         </section>
         <section class="products">
@@ -45,7 +45,7 @@
                 <div class="inforeturn">
                     <div class="shippingdiv">
                         <div class="shippingicondiv">
-                            <img src="./img/car.svg" alt="" id="shippingicon">
+                            <img src="./img/car.svg" alt="" id="shippingicon" draggable="false">
                         </div>
                         <div class="shippinginfo">
                             <h3>QUICK SHIPPING</h3>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="paymentdiv">
                         <div class="paymenticondiv">
-                            <img src="./img/car.svg" alt="" id="paymenticon">
+                            <img src="./img/wallet.svg" alt="" id="paymenticon" draggable="false">
                         </div>
                         <div class="paymentinfo">
                             <h3>EASY PAYMENT</h3>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="returnandexchange">
                         <div class="returnandexchangeicondiv">
-                            <img src="./img/car.svg" alt="" id="returnandexchangeicon">
+                            <img src="./img/return.svg" alt="" id="returnandexchangeicon" draggable="false">
                         </div>
                         <div class="paymentinfo">
                             <h3>RETURN AND EXCHANGE</h3>
@@ -73,14 +73,55 @@
                     </div>
                 </div>
                 <div class="imagediv">
-                    <img src="./img/sunglassesimage.jpg" alt="" class="sunglassesimagestyle">
-                    <img src="./img/sunglassesimage.jpg" alt="" class="sunglassesimagestyle">
+                    <img src="./img/sunglassesimage.jpg" alt="" class="sunglassesimagestyle" draggable="false">
+                    <img src="./img/sunglassesimage.jpg" alt="" class="sunglassesimagestyle" draggable="false">
                 </div>
                 <div class="feature">
-                    <h3>Feature</h3>
+                    <p id="featuretext">Feature - products</p>
+                </div>
+                <div class="sunglassproducts">
+                    <div class="backgroundimageproduct">
+                        <img src="./img/sunglasses.png" alt="" class="backgroundimageproductstyle" draggable="false">
+                        <button class="addtocart">Add to cart</button>
+                        <p class="pricetext">Price: <span>2000</span>$</p>
+                    </div>
+                    <div class="backgroundimageproduct">
+                        <img src="./img/sunglasses.png" alt="" class="backgroundimageproductstyle" draggable="false">
+                        <button class="addtocart">Add to cart</button>
+                        <p class="pricetext">Price: <span>2000</span>$</p>
+                    </div>
+                    <div class="backgroundimageproduct">
+                        <img src="./img/sunglasses.png" alt="" class="backgroundimageproductstyle" draggable="false">
+                        <button class="addtocart">Add to cart</button>
+                        <p class="pricetext">Price: <span>2000</span>$</p>
+                    </div>
+                    <div class="backgroundimageproduct">
+                        <img src="./img/sunglasses.png" alt="" class="backgroundimageproductstyle" draggable="false">
+                        <button class="addtocart">Add to cart</button>
+                        <p class="pricetext">Price: <span>2000</span>$</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="showcase">
+            <div class="collection">
+                <img src="./img/sunglasses.png" alt="" id="sunglassescollection">
+                <div class="collectiontextdiv">
+                    <h2>SUMMER COLLECTIONS</h2>
+                    <p id="collectiontext">It is good enter text about product, it captures user attention and allows design to be more vibrant and gives knowledge to users about the product at hand</p>
+                </div>
+                <button id="explorebutton">EXPLORE <span><img src="./img/arrow.png" alt="" id="arrowimage"></span></button>
+            </div>
+            <div class="showcaseimage">
+                <img src="./img/person.jpg" alt="" id="personimage">
+            </div>
+        </section>
+        <footer>
+            <div class="footersection"></div>
+            <div class="footersection"></div>
+            <div class="footersection"></div>
+            <div class="footersection"></div>
+        </footer>
     </main>
 </body>
 </html>

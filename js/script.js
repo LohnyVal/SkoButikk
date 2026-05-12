@@ -12,7 +12,6 @@ let infoHoverDevlivery = document.getElementById("svgDelivery");
 
  let taxAmount = document.getElementById("taxAmount"); 
  let discountAmount = document.getElementById("discountAmount"); 
- let totalAmount = document.getElementById("totalAmount");
  let deliveryAmount = document.getElementById("deliveryAmount")
 
  let expressPrice = 10;
@@ -111,6 +110,5 @@ infoHoverDevlivery.addEventListener("mouseenter", () =>{
 })
 
 })
-
 
 

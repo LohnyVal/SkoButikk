@@ -8,7 +8,7 @@ html, body{
 }
 
 body{
-    background-color: white;
+    background-color:#97511b39;
 }
 
 .navbar{
@@ -25,9 +25,11 @@ body{
 }
 
 #logo{
-    text-decoration: none;
+    list-style-type: none;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    width: 20%;
     cursor: pointer;
-    color: black;
 }
 
 .navcenter{
@@ -42,7 +44,7 @@ body{
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 20px;
 }
 
 .navleft, .navcenter, .navright{
@@ -58,6 +60,15 @@ body{
 
 #carticon{
     width: 8%;
+    background-color: inherit;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+
+#carticon:hover{
+    background-color :#97511b55;
 }
 
 #profileicon, #carticon{
@@ -67,7 +78,7 @@ body{
 .links a{   
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     cursor: pointer;
     color: black;
     display: inline-block;
@@ -79,7 +90,7 @@ body{
 .links:nth-child(3) a:hover,
 .links:nth-child(4) a:hover,
 .links:nth-child(5) a:hover{
-    transform: scale(1.04);
+    transform: scale(1.1);
     color: #97501B;
 }
 
@@ -89,7 +100,6 @@ main{
 }
 
 .hero{
-
     height: 60vh;
     display: flex;
     align-items: center;
@@ -98,7 +108,7 @@ main{
 }
 
 #title{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     color: #97501B;
 }
 
@@ -151,12 +161,12 @@ main{
 
 #sunglasses{
     width: 100%;
-    transform: scale(1.4) rotate(30deg);
+    transform: scale(1.5) rotate(30deg);
 }
 
 
 .products{
-    height: 100vh;
+    height: 150vh;
     background-color: rgba(128, 128, 128, 0.189);
     display: flex;
     justify-content: center;
@@ -216,7 +226,7 @@ main{
 .imagediv{
     display: flex;
     justify-content: space-evenly;
-    height: 30%;
+    height: 20%;
     width: 100%;
     margin-top: 2%;
 }
@@ -225,12 +235,145 @@ main{
     aspect-ratio: 2.5 / 1;
     object-fit: cover;
     object-position: 50% 40%;
+    border-radius: 3px;
+}
+
+#sunglassesimagestyle{
+    object-position: 50%;
 }
 
 .feature{
     /* background-color: red; */
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5.5%;
-    height: 10%;
+    height: 5%;
     width: fit-content;
+}
+
+#featuretext{
+    font-size: 1.5rem;
+}
+
+.sunglassproducts{
+    /* background-color: yellow; */
+    width: 90%;
+    height: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.backgroundimageproduct{
+    background-color: white;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.backgroundimageproductstyle{
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    width: 60%;
+}
+
+.addtocart{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+    width: 33%;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    border: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+
+.addtocart:hover{
+    background-color: #97511bc4;
+    color: white;
+}
+
+.pricetext{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.showcase{
+    display: flex;
+    height: 60vh;
+}
+
+.collection, .showcaseimage{
+    width: 50%;
+    height: 100%;
+}
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.collectiontextdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#sunglassescollection{
+    width: 35%;
+}
+
+
+
+#explorebutton{
+    width: 20%;
+    background-color: #97501B;
+    height: 10%;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#collectiontext{
+    width: 60%;
+}
+
+#arrowimage{
+    width: 100%;
+    transform: scale(1.5) translateY(1px);
+}
+
+
+#personimage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: black;
 }

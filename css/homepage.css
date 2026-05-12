@@ -100,7 +100,6 @@ main{
 }
 
 .hero{
-
     height: 60vh;
     display: flex;
     align-items: center;
@@ -162,7 +161,7 @@ main{
 
 #sunglasses{
     width: 100%;
-    transform: scale(1.4) rotate(30deg);
+    transform: scale(1.5) rotate(30deg);
 }
 
 
@@ -239,6 +238,10 @@ main{
     border-radius: 3px;
 }
 
+#sunglassesimagestyle{
+    object-position: 50%;
+}
+
 .feature{
     /* background-color: red; */
     margin-top: 3%;
@@ -262,7 +265,7 @@ main{
 
 .backgroundimageproduct{
     background-color: white;
-    
+
     position: relative;
     display: flex;
     align-items: center;
